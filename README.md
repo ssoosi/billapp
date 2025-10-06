@@ -104,7 +104,7 @@ curl -s -X POST http://localhost:3000/accounts/acct-001/bill \
     "transactionCount":110
   }' | jq
 ```
-How the service calculates (explained step-by-step)
+# How the service calculates (explained step-by-step)
 
 Billing period: 2025-10-01 → 2025-10-31 → 31 days.
 
@@ -156,7 +156,7 @@ The API response will look like:
 ```
 
 
-##⚡ Tips for Testing
+## ⚡ Tips for Testing
 
 Use Postman or Insomnia to make requests.
 
@@ -170,7 +170,7 @@ After promo window → no discount
 
 Test transactions above/below the threshold to see transaction fees in action.
 
-##📌 Notes
+## 📌 Notes
 
 All data is in-memory → restarting the server clears all accounts and currencies.
 
@@ -178,7 +178,7 @@ Transaction fees are £0.50 per transaction over threshold by default (can adjus
 
 Discount is proportional to overlap between billing period and promotional days.
 
-##❤️ Built With
+## ❤️ Built With
 
 NestJS
 
